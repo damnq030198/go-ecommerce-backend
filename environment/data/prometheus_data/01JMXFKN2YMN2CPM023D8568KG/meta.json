@@ -1,0 +1,17 @@
+{
+	"ulid": "01JMXFKN2YMN2CPM023D8568KG",
+	"minTime": 1739348693195,
+	"maxTime": 1739354400000,
+	"stats": {
+		"numSamples": 175931,
+		"numSeries": 564,
+		"numChunks": 1692
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JMXFKN2YMN2CPM023D8568KG"
+		]
+	},
+	"version": 1
+}

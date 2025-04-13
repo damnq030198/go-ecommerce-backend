@@ -1,7 +1,5 @@
 package response
 
-import "errors"
-
 const (
 	ErrCodeSuccess      = 20001 // Success
 	ErrCodeParamInvalid = 20003 // Email is invalid
@@ -41,8 +39,3 @@ var msg = map[int]string{
 	ErrCodeTwoFactorAuthSetupFailed:  "Two Factor Authentication setup failed",
 	ErrCodeTwoFactorAuthVerifyFailed: "Two Factor Authentication verify failed",
 }
-
-// These are error sentinels
-var (
-	CouldNotGetTicketErr = errors.New("Could not get Ticket from MYSQL") //Type of Internal Error
-)

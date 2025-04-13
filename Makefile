@@ -19,9 +19,8 @@ print_vars:
 
 # Chạy ứng dụng
 
-docker_build:
-	docker-compose up -d --build
-	docker-compose ps
+docker_up:
+	docker-compose -f environment/docker-compose-dev.yml up
 docker_down:
 	docker-compose -f environment/docker-compose-dev.yml down
 

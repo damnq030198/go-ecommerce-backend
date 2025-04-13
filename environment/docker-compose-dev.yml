@@ -26,40 +26,6 @@ services:
     networks:
       - pre-go-local-networks
 
-#   mysqld-exporter:
-#     image: prom/mysqld-exporter
-#     container_name: mysqld_exporter_container
-#     ports:
-#       - "9104:9104"
-#     command:
-#       - '--collect.engine_innodb_status'
-#       - '--collect.info_schema.processlist'
-#       - '--collect.info_schema.tables'
-#       - '--collect.info_schema.query_response_time'
-#       - '--collect.perf_schema.file_events'
-#       - '--collect.perf_schema.eventsstatements'
-#       - '--collect.perf_schema.indexiowaits'
-#       - '--collect.global_status'
-# #      - '--ignore-tables'
-#       - '--config.my-cnf=/etc/mysql/.my.cnf'
-#     volumes:
-#       - ./mysqld-exporter/.my.cnf:/etc/mysql/.my.cnf
-#     environment:
-#       - DATA_SOURCE_NAME=root:root1234@tcp(mysql:33306)/
-#     depends_on:
-#       - mysql
-#     networks:
-#       - pre-go-local-networks    
-  # redis:
-  #   image: redis:7.0
-  #   container_name: redis_container
-  #   ports:
-  #     - "6331:6379"
-  #   volumes:
-  #     - ./data/redis_data:/data
-  #   networks:
-  #     - pre-go-local-networks
-
   #support bloom filters
   redis:
     image: redis/redis-stack:latest

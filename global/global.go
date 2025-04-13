@@ -18,10 +18,3 @@ var (
 	Mdbc          *sql.DB
 	KafkaProducer *kafka.Writer
 )
-
-/*
-Config
-REdis
-Mysql
-...
-*/

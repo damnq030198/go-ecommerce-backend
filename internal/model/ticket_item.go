@@ -2,10 +2,10 @@ package model
 
 // VO: Get ticketItems returns
 type TicketItemsOutput struct {
-	TicketId       int    `json:"ID"`             // Sửa tag và thêm field
-	TicketName     string `json:"Name"`           // Sửa tag
-	StockAvailable int    `json:"StockAvailable"` // Sửa tag
-	StockInitial   int    `json:"StockInitial"`   // Sửa tag
+	TicketId       int    `json:"ticket_Id"`
+	TicketName     string `json:"ticket_Name"`
+	StockAvailable int    `json:"stock_Available"`
+	StockInitial   int    `json:"stock_Initial"`
 }
 
 // DTO

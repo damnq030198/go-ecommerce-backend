@@ -10,7 +10,7 @@ type (
 	ITicketHome interface {
 	}
 	ITicketItem interface {
-		GetTicketItemById(ctx context.Context, ticketId int) (out model.TicketItemsOutput, err error)
+		GetTicketItemById(ctx context.Context, ticketId int) (out *model.TicketItemsOutput, err error)
 	}
 )
 
