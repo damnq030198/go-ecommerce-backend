@@ -1,0 +1,17 @@
+{
+	"ulid": "01JPV78WGE5G8N74QCDWEFWTAY",
+	"minTime": 1742472000000,
+	"maxTime": 1742479200000,
+	"stats": {
+		"numSamples": 643095,
+		"numSeries": 604,
+		"numChunks": 5282
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JPV78WGE5G8N74QCDWEFWTAY"
+		]
+	},
+	"version": 1
+}
